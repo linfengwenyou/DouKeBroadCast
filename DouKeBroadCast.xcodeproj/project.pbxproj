@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		B31D5CC9214B9B9500868ACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5CC8214B9B9500868ACB /* AppDelegate.swift */; };
-		B31D5CCB214B9B9500868ACB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5CCA214B9B9500868ACB /* ViewController.swift */; };
-		B31D5CCE214B9B9500868ACB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31D5CCC214B9B9500868ACB /* Main.storyboard */; };
 		B31D5CD0214B9B9700868ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31D5CCF214B9B9700868ACB /* Assets.xcassets */; };
-		B31D5CD3214B9B9700868ACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31D5CD1214B9B9700868ACB /* LaunchScreen.storyboard */; };
 		B31D5CDE214B9B9700868ACB /* DouKeBroadCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5CDD214B9B9700868ACB /* DouKeBroadCastTests.swift */; };
 		B31D5CE9214B9B9700868ACB /* DouKeBroadCastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5CE8214B9B9700868ACB /* DouKeBroadCastUITests.swift */; };
+		B31D5CFE214BAB2300868ACB /* RAYNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5CFD214BAB2300868ACB /* RAYNavigationController.swift */; };
+		B31D5D00214BAB3300868ACB /* RAYTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5CFF214BAB3300868ACB /* RAYTabBarController.swift */; };
+		B31D5D02214BABD200868ACB /* RAYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5D01214BABD200868ACB /* RAYBaseViewController.swift */; };
+		B31D5D40214BADAC00868ACB /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31D5D3F214BADAC00868ACB /* Common.xcassets */; };
+		B31D5D43214BAF3F00868ACB /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5D42214BAF3F00868ACB /* ExtensionColor.swift */; };
+		B31D5D45214BB7C200868ACB /* Launch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31D5D44214BB7C200868ACB /* Launch.xcassets */; };
+		B31D5D47214BB92000868ACB /* RAYHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5D46214BB92000868ACB /* RAYHomeController.swift */; };
 		D3C71A9CDD83547704D32918 /* Pods_DouKeBroadCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E386C45D3F90BB67D4BA23 /* Pods_DouKeBroadCast.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,10 +42,7 @@
 		49E386C45D3F90BB67D4BA23 /* Pods_DouKeBroadCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouKeBroadCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31D5CC5214B9B9500868ACB /* DouKeBroadCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouKeBroadCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31D5CC8214B9B9500868ACB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B31D5CCA214B9B9500868ACB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B31D5CCD214B9B9500868ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B31D5CCF214B9B9700868ACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B31D5CD2214B9B9700868ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B31D5CD4214B9B9700868ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B31D5CD9214B9B9700868ACB /* DouKeBroadCastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouKeBroadCastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31D5CDD214B9B9700868ACB /* DouKeBroadCastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouKeBroadCastTests.swift; sourceTree = "<group>"; };
@@ -49,6 +50,14 @@
 		B31D5CE4214B9B9700868ACB /* DouKeBroadCastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouKeBroadCastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31D5CE8214B9B9700868ACB /* DouKeBroadCastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouKeBroadCastUITests.swift; sourceTree = "<group>"; };
 		B31D5CEA214B9B9700868ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B31D5CF8214BA0AD00868ACB /* DouKeBroadCast-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DouKeBroadCast-Bridging-Header.h"; sourceTree = "<group>"; };
+		B31D5CFD214BAB2300868ACB /* RAYNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAYNavigationController.swift; sourceTree = "<group>"; };
+		B31D5CFF214BAB3300868ACB /* RAYTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAYTabBarController.swift; sourceTree = "<group>"; };
+		B31D5D01214BABD200868ACB /* RAYBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAYBaseViewController.swift; sourceTree = "<group>"; };
+		B31D5D3F214BADAC00868ACB /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
+		B31D5D42214BAF3F00868ACB /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
+		B31D5D44214BB7C200868ACB /* Launch.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Launch.xcassets; sourceTree = "<group>"; };
+		B31D5D46214BB92000868ACB /* RAYHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAYHomeController.swift; sourceTree = "<group>"; };
 		F68C4E8DA97A5B6F6432F9AA /* Pods-DouKeBroadCast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouKeBroadCast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouKeBroadCast/Pods-DouKeBroadCast.debug.xcconfig"; sourceTree = "<group>"; };
 		FEDB8075F4D63861C8F732E1 /* Pods-DouKeBroadCast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouKeBroadCast.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouKeBroadCast/Pods-DouKeBroadCast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,12 +130,13 @@
 		B31D5CC7214B9B9500868ACB /* DouKeBroadCast */ = {
 			isa = PBXGroup;
 			children = (
+				B31D5CF9214BAAD700868ACB /* Main */,
+				B31D5D41214BAF2C00868ACB /* Expand */,
+				B31D5D03214BAD5F00868ACB /* Source */,
+				B31D5CFA214BAADD00868ACB /* Base */,
 				B31D5CC8214B9B9500868ACB /* AppDelegate.swift */,
-				B31D5CCA214B9B9500868ACB /* ViewController.swift */,
-				B31D5CCC214B9B9500868ACB /* Main.storyboard */,
-				B31D5CCF214B9B9700868ACB /* Assets.xcassets */,
-				B31D5CD1214B9B9700868ACB /* LaunchScreen.storyboard */,
 				B31D5CD4214B9B9700868ACB /* Info.plist */,
+				B31D5CF7214BA08E00868ACB /* Other */,
 			);
 			path = DouKeBroadCast;
 			sourceTree = "<group>";
@@ -147,6 +157,50 @@
 				B31D5CEA214B9B9700868ACB /* Info.plist */,
 			);
 			path = DouKeBroadCastUITests;
+			sourceTree = "<group>";
+		};
+		B31D5CF7214BA08E00868ACB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B31D5CF8214BA0AD00868ACB /* DouKeBroadCast-Bridging-Header.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B31D5CF9214BAAD700868ACB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B31D5D46214BB92000868ACB /* RAYHomeController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B31D5CFA214BAADD00868ACB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B31D5CFD214BAB2300868ACB /* RAYNavigationController.swift */,
+				B31D5CFF214BAB3300868ACB /* RAYTabBarController.swift */,
+				B31D5D01214BABD200868ACB /* RAYBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B31D5D03214BAD5F00868ACB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B31D5D3F214BADAC00868ACB /* Common.xcassets */,
+				B31D5D44214BB7C200868ACB /* Launch.xcassets */,
+				B31D5CCF214B9B9700868ACB /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B31D5D41214BAF2C00868ACB /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				B31D5D42214BAF3F00868ACB /* ExtensionColor.swift */,
+			);
+			path = Expand;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,9 +267,10 @@
 		B31D5CBD214B9B9500868ACB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RAY;
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = fumi;
+				ORGANIZATIONNAME = Rayer;
 				TargetAttributes = {
 					B31D5CC4214B9B9500868ACB = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -255,9 +310,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B31D5CD3214B9B9700868ACB /* LaunchScreen.storyboard in Resources */,
+				B31D5D40214BADAC00868ACB /* Common.xcassets in Resources */,
+				B31D5D45214BB7C200868ACB /* Launch.xcassets in Resources */,
 				B31D5CD0214B9B9700868ACB /* Assets.xcassets in Resources */,
-				B31D5CCE214B9B9500868ACB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +380,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B31D5CCB214B9B9500868ACB /* ViewController.swift in Sources */,
+				B31D5D00214BAB3300868ACB /* RAYTabBarController.swift in Sources */,
+				B31D5D47214BB92000868ACB /* RAYHomeController.swift in Sources */,
+				B31D5D02214BABD200868ACB /* RAYBaseViewController.swift in Sources */,
 				B31D5CC9214B9B9500868ACB /* AppDelegate.swift in Sources */,
+				B31D5CFE214BAB2300868ACB /* RAYNavigationController.swift in Sources */,
+				B31D5D43214BAF3F00868ACB /* ExtensionColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,25 +419,6 @@
 			targetProxy = B31D5CE5214B9B9700868ACB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B31D5CCC214B9B9500868ACB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B31D5CCD214B9B9500868ACB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B31D5CD1214B9B9700868ACB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B31D5CD2214B9B9700868ACB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B31D5CEB214B9B9700868ACB /* Debug */ = {
@@ -438,6 +478,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -491,6 +532,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -500,13 +542,20 @@
 			baseConfigurationReference = F68C4E8DA97A5B6F6432F9AA /* Pods-DouKeBroadCast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouKeBroadCast/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Other/DouKeBroadCast-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -515,13 +564,20 @@
 			baseConfigurationReference = FEDB8075F4D63861C8F732E1 /* Pods-DouKeBroadCast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouKeBroadCast/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Other/DouKeBroadCast-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -532,7 +588,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouKeBroadCastTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCastTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -548,7 +608,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouKeBroadCastTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCastTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -563,7 +627,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouKeBroadCastUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCastUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -578,7 +646,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouKeBroadCastUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCastUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
