@@ -1,10 +1,11 @@
-platform :ios, '7.0'  
+platform :ios, '9.0'  
 
 use_frameworks!  
 
 target 'DouKeBroadCast' do  
 
-pod 'SDWebImage'
-pod 'AFNetworking'
-pod 'masonry'
+	pod 'SDWebImage'
+	pod 'AFNetworking'
+ 	pod 'SnapKit'
+
 end  

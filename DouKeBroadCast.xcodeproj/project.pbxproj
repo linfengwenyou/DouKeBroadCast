@@ -14,6 +14,7 @@
 		B31D5CD3214B9B9700868ACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31D5CD1214B9B9700868ACB /* LaunchScreen.storyboard */; };
 		B31D5CDE214B9B9700868ACB /* DouKeBroadCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5CDD214B9B9700868ACB /* DouKeBroadCastTests.swift */; };
 		B31D5CE9214B9B9700868ACB /* DouKeBroadCastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5CE8214B9B9700868ACB /* DouKeBroadCastUITests.swift */; };
+		D3C71A9CDD83547704D32918 /* Pods_DouKeBroadCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E386C45D3F90BB67D4BA23 /* Pods_DouKeBroadCast.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49E386C45D3F90BB67D4BA23 /* Pods_DouKeBroadCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouKeBroadCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31D5CC5214B9B9500868ACB /* DouKeBroadCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouKeBroadCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31D5CC8214B9B9500868ACB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B31D5CCA214B9B9500868ACB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		B31D5CE4214B9B9700868ACB /* DouKeBroadCastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouKeBroadCastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31D5CE8214B9B9700868ACB /* DouKeBroadCastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouKeBroadCastUITests.swift; sourceTree = "<group>"; };
 		B31D5CEA214B9B9700868ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68C4E8DA97A5B6F6432F9AA /* Pods-DouKeBroadCast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouKeBroadCast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouKeBroadCast/Pods-DouKeBroadCast.debug.xcconfig"; sourceTree = "<group>"; };
+		FEDB8075F4D63861C8F732E1 /* Pods-DouKeBroadCast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouKeBroadCast.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouKeBroadCast/Pods-DouKeBroadCast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C71A9CDD83547704D32918 /* Pods_DouKeBroadCast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39E53AEEC58F6DE47DE53957 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49E386C45D3F90BB67D4BA23 /* Pods_DouKeBroadCast.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		565F3B4729F2104BDF995C3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F68C4E8DA97A5B6F6432F9AA /* Pods-DouKeBroadCast.debug.xcconfig */,
+				FEDB8075F4D63861C8F732E1 /* Pods-DouKeBroadCast.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B31D5CBC214B9B9500868ACB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				B31D5CDC214B9B9700868ACB /* DouKeBroadCastTests */,
 				B31D5CE7214B9B9700868ACB /* DouKeBroadCastUITests */,
 				B31D5CC6214B9B9500868ACB /* Products */,
+				565F3B4729F2104BDF995C3D /* Pods */,
+				39E53AEEC58F6DE47DE53957 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B31D5CED214B9B9700868ACB /* Build configuration list for PBXNativeTarget "DouKeBroadCast" */;
 			buildPhases = (
+				8B68E33ACFFD2B4A5977AB42 /* [CP] Check Pods Manifest.lock */,
 				B31D5CC1214B9B9500868ACB /* Sources */,
 				B31D5CC2214B9B9500868ACB /* Frameworks */,
 				B31D5CC3214B9B9500868ACB /* Resources */,
+				3BFA1F057A1F964ECF0FD5E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BFA1F057A1F964ECF0FD5E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DouKeBroadCast/Pods-DouKeBroadCast-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouKeBroadCast/Pods-DouKeBroadCast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B68E33ACFFD2B4A5977AB42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DouKeBroadCast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B31D5CC1214B9B9500868ACB /* Sources */ = {
@@ -428,14 +497,12 @@
 		};
 		B31D5CEE214B9B9700868ACB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F68C4E8DA97A5B6F6432F9AA /* Pods-DouKeBroadCast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouKeBroadCast/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -445,14 +512,12 @@
 		};
 		B31D5CEF214B9B9700868ACB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEDB8075F4D63861C8F732E1 /* Pods-DouKeBroadCast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouKeBroadCast/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -467,11 +532,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouKeBroadCastTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCastTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -487,11 +548,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouKeBroadCastTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCastTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -506,11 +563,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouKeBroadCastUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCastUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -525,11 +578,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouKeBroadCastUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCastUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

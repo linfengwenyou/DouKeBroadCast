@@ -1,0 +1,13 @@
+build/
+DerivedData/
+Pods/
+CocoaPods/
+*.hmap
+*.ipa
+
+*.moved-aside
+*.xcuserstate
+*.DS_Store
+*.xcworkspace/xcshareddata
+
+
