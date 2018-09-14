@@ -10,4 +10,5 @@
 #define DouKeBroadCast_Bridging_Header_h
 
 #import "SDWebImage/UIView+WebCache.h"
+#import "AFNetworking/AFNetworking.h"
 #endif /* DouKeBroadCast_Bridging_Header_h */

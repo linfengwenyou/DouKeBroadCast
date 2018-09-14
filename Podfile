@@ -7,5 +7,6 @@ target 'DouKeBroadCast' do
 	pod 'SDWebImage'
 	pod 'AFNetworking'
  	pod 'SnapKit'
+	pod 'LFLiveKit'
 
 end  

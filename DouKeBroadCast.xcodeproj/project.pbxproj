@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		287CD420214BF1CC00608BF3 /* RAYHomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287CD41E214BF1CC00608BF3 /* RAYHomeController.xib */; };
+		287CD421214BF1CC00608BF3 /* RAYHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CD41F214BF1CC00608BF3 /* RAYHomeController.swift */; };
+		287CD428214BF95300608BF3 /* RAYHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CD426214BF95300608BF3 /* RAYHomeCell.swift */; };
+		287CD429214BF95300608BF3 /* RAYHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287CD427214BF95300608BF3 /* RAYHomeCell.xib */; };
+		287CD42D214C10D700608BF3 /* RAYMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CD42B214C10D700608BF3 /* RAYMineController.swift */; };
+		287CD42E214C10D700608BF3 /* RAYMineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287CD42C214C10D700608BF3 /* RAYMineController.xib */; };
+		287CD430214C111E00608BF3 /* RAYMineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CD42F214C111E00608BF3 /* RAYMineHeaderView.swift */; };
+		287CD432214C113100608BF3 /* RAYMineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287CD431214C113100608BF3 /* RAYMineHeaderView.xib */; };
+		287CD434214C149400608BF3 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CD433214C149400608BF3 /* ExtensionView.swift */; };
+		287CD436214C1E9E00608BF3 /* RAYUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CD435214C1E9E00608BF3 /* RAYUtil.swift */; };
+		28F4F0D6214BEC6500EDBB16 /* Marcros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4F0D5214BEC6500EDBB16 /* Marcros.swift */; };
 		B31D5CC9214B9B9500868ACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5CC8214B9B9500868ACB /* AppDelegate.swift */; };
 		B31D5CD0214B9B9700868ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31D5CCF214B9B9700868ACB /* Assets.xcassets */; };
 		B31D5CDE214B9B9700868ACB /* DouKeBroadCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5CDD214B9B9700868ACB /* DouKeBroadCastTests.swift */; };
@@ -17,7 +28,6 @@
 		B31D5D40214BADAC00868ACB /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31D5D3F214BADAC00868ACB /* Common.xcassets */; };
 		B31D5D43214BAF3F00868ACB /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5D42214BAF3F00868ACB /* ExtensionColor.swift */; };
 		B31D5D45214BB7C200868ACB /* Launch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31D5D44214BB7C200868ACB /* Launch.xcassets */; };
-		B31D5D47214BB92000868ACB /* RAYHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5D46214BB92000868ACB /* RAYHomeController.swift */; };
 		D3C71A9CDD83547704D32918 /* Pods_DouKeBroadCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E386C45D3F90BB67D4BA23 /* Pods_DouKeBroadCast.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +49,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		287CD41E214BF1CC00608BF3 /* RAYHomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAYHomeController.xib; sourceTree = "<group>"; };
+		287CD41F214BF1CC00608BF3 /* RAYHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAYHomeController.swift; sourceTree = "<group>"; };
+		287CD426214BF95300608BF3 /* RAYHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAYHomeCell.swift; sourceTree = "<group>"; };
+		287CD427214BF95300608BF3 /* RAYHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RAYHomeCell.xib; sourceTree = "<group>"; };
+		287CD42B214C10D700608BF3 /* RAYMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAYMineController.swift; sourceTree = "<group>"; };
+		287CD42C214C10D700608BF3 /* RAYMineController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RAYMineController.xib; sourceTree = "<group>"; };
+		287CD42F214C111E00608BF3 /* RAYMineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAYMineHeaderView.swift; sourceTree = "<group>"; };
+		287CD431214C113100608BF3 /* RAYMineHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RAYMineHeaderView.xib; sourceTree = "<group>"; };
+		287CD433214C149400608BF3 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
+		287CD435214C1E9E00608BF3 /* RAYUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAYUtil.swift; sourceTree = "<group>"; };
+		28F4F0D5214BEC6500EDBB16 /* Marcros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marcros.swift; sourceTree = "<group>"; };
 		49E386C45D3F90BB67D4BA23 /* Pods_DouKeBroadCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouKeBroadCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31D5CC5214B9B9500868ACB /* DouKeBroadCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouKeBroadCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31D5CC8214B9B9500868ACB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +78,6 @@
 		B31D5D3F214BADAC00868ACB /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
 		B31D5D42214BAF3F00868ACB /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
 		B31D5D44214BB7C200868ACB /* Launch.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Launch.xcassets; sourceTree = "<group>"; };
-		B31D5D46214BB92000868ACB /* RAYHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAYHomeController.swift; sourceTree = "<group>"; };
 		F68C4E8DA97A5B6F6432F9AA /* Pods-DouKeBroadCast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouKeBroadCast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouKeBroadCast/Pods-DouKeBroadCast.debug.xcconfig"; sourceTree = "<group>"; };
 		FEDB8075F4D63861C8F732E1 /* Pods-DouKeBroadCast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouKeBroadCast.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouKeBroadCast/Pods-DouKeBroadCast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +108,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		287CD42A214C108400608BF3 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				287CD42B214C10D700608BF3 /* RAYMineController.swift */,
+				287CD42C214C10D700608BF3 /* RAYMineController.xib */,
+				287CD42F214C111E00608BF3 /* RAYMineHeaderView.swift */,
+				287CD431214C113100608BF3 /* RAYMineHeaderView.xib */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		28F4F0D9214BF18200EDBB16 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				287CD41F214BF1CC00608BF3 /* RAYHomeController.swift */,
+				287CD41E214BF1CC00608BF3 /* RAYHomeController.xib */,
+				287CD426214BF95300608BF3 /* RAYHomeCell.swift */,
+				287CD427214BF95300608BF3 /* RAYHomeCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		39E53AEEC58F6DE47DE53957 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +172,7 @@
 		B31D5CC7214B9B9500868ACB /* DouKeBroadCast */ = {
 			isa = PBXGroup;
 			children = (
+				287CD42A214C108400608BF3 /* Mine */,
 				B31D5CF9214BAAD700868ACB /* Main */,
 				B31D5D41214BAF2C00868ACB /* Expand */,
 				B31D5D03214BAD5F00868ACB /* Source */,
@@ -170,7 +213,7 @@
 		B31D5CF9214BAAD700868ACB /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				B31D5D46214BB92000868ACB /* RAYHomeController.swift */,
+				28F4F0D9214BF18200EDBB16 /* Home */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -199,6 +242,9 @@
 			isa = PBXGroup;
 			children = (
 				B31D5D42214BAF3F00868ACB /* ExtensionColor.swift */,
+				28F4F0D5214BEC6500EDBB16 /* Marcros.swift */,
+				287CD433214C149400608BF3 /* ExtensionView.swift */,
+				287CD435214C1E9E00608BF3 /* RAYUtil.swift */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -312,7 +358,11 @@
 			files = (
 				B31D5D40214BADAC00868ACB /* Common.xcassets in Resources */,
 				B31D5D45214BB7C200868ACB /* Launch.xcassets in Resources */,
+				287CD429214BF95300608BF3 /* RAYHomeCell.xib in Resources */,
 				B31D5CD0214B9B9700868ACB /* Assets.xcassets in Resources */,
+				287CD420214BF1CC00608BF3 /* RAYHomeController.xib in Resources */,
+				287CD432214C113100608BF3 /* RAYMineHeaderView.xib in Resources */,
+				287CD42E214C10D700608BF3 /* RAYMineController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,11 +431,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B31D5D00214BAB3300868ACB /* RAYTabBarController.swift in Sources */,
-				B31D5D47214BB92000868ACB /* RAYHomeController.swift in Sources */,
+				287CD428214BF95300608BF3 /* RAYHomeCell.swift in Sources */,
+				287CD42D214C10D700608BF3 /* RAYMineController.swift in Sources */,
 				B31D5D02214BABD200868ACB /* RAYBaseViewController.swift in Sources */,
 				B31D5CC9214B9B9500868ACB /* AppDelegate.swift in Sources */,
 				B31D5CFE214BAB2300868ACB /* RAYNavigationController.swift in Sources */,
 				B31D5D43214BAF3F00868ACB /* ExtensionColor.swift in Sources */,
+				287CD434214C149400608BF3 /* ExtensionView.swift in Sources */,
+				287CD430214C111E00608BF3 /* RAYMineHeaderView.swift in Sources */,
+				287CD421214BF1CC00608BF3 /* RAYHomeController.swift in Sources */,
+				287CD436214C1E9E00608BF3 /* RAYUtil.swift in Sources */,
+				28F4F0D6214BEC6500EDBB16 /* Marcros.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +606,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Other/DouKeBroadCast-Bridging-Header.h";
@@ -572,6 +629,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.song.DouKeBroadCast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Other/DouKeBroadCast-Bridging-Header.h";

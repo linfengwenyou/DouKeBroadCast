@@ -24,7 +24,7 @@ class RAYTabBarController: UITabBarController {
         self.addChildViewController(childerVC: myShowVC, title: "购物车", normalImg: "tab_car_icon", selectedImg: "tab_car_select_icon")
         
         //会员中心
-        let memberCenterVc = RAYBaseViewController()
+        let memberCenterVc = RAYMineController()
         self.addChildViewController(childerVC: memberCenterVc, title: "个人中心", normalImg: "tab_user_icon", selectedImg: "tab_user_select_icon")
         
         self.selectedIndex = 0
