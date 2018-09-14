@@ -12,8 +12,4 @@ class RAYBaseViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesEnded(touches, with: event)
-        self.navigationController?.pushViewController(RAYBaseViewController(), animated: true)
-    }
 }
