@@ -14,5 +14,4 @@ class RAYMineHeaderView: UIView {
 		super.awakeFromNib()
 		
 	}
-	
 }

@@ -70,7 +70,7 @@ extension UIViewLoading where Self : UIView {
 ##### 获取类信息
 
 > 1.  NSObject.self // 返回的为class类型
-> 2. NSStringFromClass() // 返回的结字符串会把项目名称也写在里面，不能作为xib名字使用,需要截取才可使用
+> 2.  NSStringFromClass() // 返回的结字符串会把项目名称也写在里面，不能作为xib名字使用,需要截取才可使用
 
 
 
@@ -99,12 +99,104 @@ self.headerView.snp.makeConstraints { (make) in
 
 ##### setter & getter
 
-
-
-##### 懒加载
+> 1. 成员变量自己写
 
 ```
-	lazy var headerView: RAYMineHeaderView = {  // 注意懒加载不能使用let
+private var _name:String?		// 通过成员变量来存储信息
+var name:String? {
+	set {
+		_name = newValue
+	}
+	get {
+		return _name
+	}
+}
+```
+
+
+
+> 2. set get 与didSet不能一起使用
+
+```
+private var _name:String?
+var name:String? {
+//	set {	// 使用了didSet不能使用 set get
+//		_name = newValue
+//	}
+//	get {
+//		return _name
+//	}
+	
+	didSet {
+		_name = name
+		print("newValue:\(_name) oldValue:\(oldValue)")
+	}
+}
+
+```
+
+> 3.  计算属性/存储属性 
+
+计算属性，就是用来计算的有set 和 get方法：【get】读计算属性，【set】写计算属性
+
+存储属性用来存储一个常量或者变量
+
+```
+// 存储属性
+var name: String = "lili"
+let age: Int = 10
+lazy var p1:Person1 = Person1() 
+```
+
+
+
+```
+// 计算属性
+private var _name:String?		// 通过成员变量来存储信息 存储属性
+var name:String? {  // 计算属性
+	set {
+		_name = newValue
+	}
+	get {
+		return _name
+	}
+}
+
+
+var name:String? {  // 计算属性 如果只读可简写
+	return _name
+}
+
+
+```
+
+
+
+总结：OC中存储属性计算属性共同构成了  
+
+​	属性：成员变量【存储属性】   set/get【计算属性】   如果计算属性，只实现了get则是只读
+
+
+
+> 4. 计算属性与懒加载区别
+
+```
+private var _name:String?		// 通过成员变量来存储信息 存储属性
+var name:String? {  // 计算属性用来操作一个存储属性，本身没有存储空间
+	set {
+		_name = newValue
+	}
+	get {
+		return _name
+	}
+}
+
+```
+
+
+
+```
+	lazy var headerView: RAYMineHeaderView = {  // 注意懒加载不能使用let，有存储空间，一次赋值，后续不会再次赋值，如果置为nil也不会出值
 		let headerView = RAYMineHeaderView.loadFromNib()
 		print("初始化lazy var ")
 		return headerView;

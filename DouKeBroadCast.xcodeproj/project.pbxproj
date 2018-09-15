@@ -17,6 +17,7 @@
 		287CD432214C113100608BF3 /* RAYMineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287CD431214C113100608BF3 /* RAYMineHeaderView.xib */; };
 		287CD434214C149400608BF3 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CD433214C149400608BF3 /* ExtensionView.swift */; };
 		287CD436214C1E9E00608BF3 /* RAYUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CD435214C1E9E00608BF3 /* RAYUtil.swift */; };
+		287CD438214C82AB00608BF3 /* RAYHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CD437214C82AB00608BF3 /* RAYHomeModel.swift */; };
 		28F4F0D6214BEC6500EDBB16 /* Marcros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4F0D5214BEC6500EDBB16 /* Marcros.swift */; };
 		B31D5CC9214B9B9500868ACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5CC8214B9B9500868ACB /* AppDelegate.swift */; };
 		B31D5CD0214B9B9700868ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31D5CCF214B9B9700868ACB /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		287CD431214C113100608BF3 /* RAYMineHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RAYMineHeaderView.xib; sourceTree = "<group>"; };
 		287CD433214C149400608BF3 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
 		287CD435214C1E9E00608BF3 /* RAYUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAYUtil.swift; sourceTree = "<group>"; };
+		287CD437214C82AB00608BF3 /* RAYHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAYHomeModel.swift; sourceTree = "<group>"; };
 		28F4F0D5214BEC6500EDBB16 /* Marcros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marcros.swift; sourceTree = "<group>"; };
 		49E386C45D3F90BB67D4BA23 /* Pods_DouKeBroadCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouKeBroadCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31D5CC5214B9B9500868ACB /* DouKeBroadCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouKeBroadCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 				287CD42C214C10D700608BF3 /* RAYMineController.xib */,
 				287CD42F214C111E00608BF3 /* RAYMineHeaderView.swift */,
 				287CD431214C113100608BF3 /* RAYMineHeaderView.xib */,
+				287CD437214C82AB00608BF3 /* RAYHomeModel.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287CD438214C82AB00608BF3 /* RAYHomeModel.swift in Sources */,
 				B31D5D00214BAB3300868ACB /* RAYTabBarController.swift in Sources */,
 				287CD428214BF95300608BF3 /* RAYHomeCell.swift in Sources */,
 				287CD42D214C10D700608BF3 /* RAYMineController.swift in Sources */,
