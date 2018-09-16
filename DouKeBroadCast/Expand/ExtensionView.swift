@@ -18,4 +18,6 @@ extension UIViewLoading where Self : UIView {
 		return nib.instantiate(withOwner: self, options: nil).first as! Self
 	}
 
+
 }
+

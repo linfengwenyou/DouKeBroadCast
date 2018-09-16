@@ -207,6 +207,19 @@ var name:String? {  // 计算属性用来操作一个存储属性，本身没有
 
 ##### self 和 Self
 
+Self相当于OC中的instancetype，但是使用方式需要配置协议方可
+
+```
+protocol aProtocol{}
+
+//只给遵守aProtocol协议的UIView添加了拓展
+extension aProtocol where Self: UIView {	// self 代表是UIView类型
+	func getString() -> String{
+		return "string"
+	}
+}
+```
+
 
 
 ##### 打印行号，方法名
@@ -219,3 +232,94 @@ func rayPrint(_ str:String) {
 }
 ```
 
+
+
+##### weak 弱引用
+
+```
+swift解除循环引用： weak  unowned
+
+```
+
+
+
+###### 延伸
+
+> 非class类型协议不能定义为weak
+
+```
+protocol LossOfLimbDelegate: class {  // 无后面class不能使用 weak
+	func limbHasBeenLost()
+}
+
+weak var delegate: LossOfLimbDelegate?
+
+```
+
+
+
+##### JSON转模型
+
+
+
+
+
+##### Where语句
+
+> Where语句为一种条件语句，像数据库语句一样，可以用于拓展，switch, forEach语句中。
+>
+> 4.0之前的if let guard 语句中的where现在用","替代
+
+```
+// extension使用
+
+protocol aProtocol{}
+
+//只给遵守aProtocol协议的UIView添加了拓展
+extension aProtocol where Self: UIView {
+	func getString() -> String{
+		return "string"
+	}
+}
+
+```
+
+
+
+```
+// switch中使用
+let strSwitch:String?
+strSwitch = "1"
+switch strSwitch {
+case "20"?:
+	break
+case let x where Int(x!) != nil && Int(x!)! < 10 :
+	print(x!)
+default:
+	break
+}
+```
+
+
+
+```
+let scores = [20,8,59,60,70,80]
+
+//switch语句中使用
+scores.forEach {
+	switch $0{
+	case let x where x>=60:
+		print("及格")
+	default:
+		print("不及格")
+	}
+}
+
+//for语句中使用
+for score in scores where score>=60 {
+	print("这个是及格的：\(score)")
+}
+
+```
+
+知识点拓展：http://www.hangge.com/blog/cache/detail_1826.html
