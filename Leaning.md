@@ -236,6 +236,66 @@ let possiblePlanet = Planet(rawValue: 7)
 
 
 
+##### 结构体 vs 类
+
+> 定义
+
+```
+ class SomeClass {
+      // class definition goes here
+  }  
+  struct SomeStructure {
+      // structure definition goes here
+  }
+```
+
+
+
+> 初始化器
+
+* 结构体会自动生成一个成员初始化器
+* 类不会自动生成
+
+> 类型
+
+* 结构体是值类型，意味着：拷贝时会拷贝值 String, Array, Dictionary 是结构体类型
+* 类是引用类型，意味着：同一个实例
+
+> 特征运算符
+
+```
+=== 	// 相同于 用来判定两个常量或变量引用相同的实例
+!==		// 不相同于 
+```
+
+
+
+> 实例操作区别
+
+* 结构体实例类型优先，其次为成员类型
+
+```
+struct FixedLengthRange {
+    var firstValue: Int	// 变量，但根据结构体实例类型决定是否为变量
+    let length: Int   // 常量，不许修改
+}
+
+var rangeOfThreeItems = FixedLengthRange(firstValue: 0, length: 3)
+rangeOfThreeItems.firstValue = 6
+rangeOfThreeItems.length = 2		// error 
+
+# 如果结构体声明为变量，则结构体成员属性由其类型决定：变量可变，常量不可变
+
+let rangeOfThreeItems = FixedLengthRange(firstValue: 0, length: 3)
+rangeOfThreeItems.firstValue = 6		// error 
+
+# 如果结构体声明为常量，则结构体所有成员属性均为常量，不可修改
+```
+
+* 类实例成员依照成员类型决定  let就是常量
+
+
+
 > 递归枚举
 
 ```
@@ -317,13 +377,14 @@ var name:String? {
 //	get {
 //		return _name
 //	}
-	
+	// 以下操作成为属性观察
+	willSet (newName) { // 如果不写参数，默认为newValue
+		print("will set my value:\(_name), newValue:\(newName)")
+	}
 	didSet {
-		_name = name
-		print("newValue:\(_name) oldValue:\(oldValue)")
+		print("newValue:\(name) oldValue:\(oldValue)")
 	}
 }
-
 ```
 
 > 3.  计算属性/存储属性 
@@ -357,7 +418,6 @@ var name:String? {  // 计算属性
 var name:String? {  // 计算属性 如果只读可简写
 	return _name
 }
-
 
 ```
 
@@ -397,6 +457,8 @@ var name:String? {  // 计算属性用来操作一个存储属性，本身没有
 
 
 ##### self 和 Self
+
+> self 每一个类的实例都隐含一个叫做self的属性，它完完全全与实例本身相等。你可以使用self属性在当前实例当中调用它自身的方法
 
 Self相当于OC中的instancetype，但是使用方式需要配置协议方可
 
@@ -550,4 +612,32 @@ swapTwoInts(&soneInt, &anotherInt)   // 需要传入地址，编译器会自动�
 ```
 
 
+
+##### 实例属性 vs 类型属性
+
+```
+static 关键字声明的属性为类型属性
+class 关键字声明属性，一般用于计算型的类型属性
+```
+
+
+
+##### 实例方法中修改值类型 mutating
+
+结构体和枚举是值类型的，默认情况下，值类型属性不能被自身实例方法修改。
+
+如果需要修改，则需要将这个方法异变
+
+```
+struct Point {
+	var x = 0.0, y = 0.0
+	mutating func moveBy(x deltaX: Double, y deltaY: Double) {	// 修改自身属性，需要异变 mutating
+		x += deltaX
+		y += deltaY
+	}
+}
+var somePoint = Point(x: 1.0, y: 1.0)  // 声明为变量，如果是常量即使异变也不可以做下面操作
+somePoint.moveBy(x: 2.0, y: 3.0)
+print("The point is now at (\(somePoint.x), \(somePoint.y))")
+```
 
