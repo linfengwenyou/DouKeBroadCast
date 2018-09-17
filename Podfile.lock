@@ -25,7 +25,7 @@ DEPENDENCIES:
   - SnapKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - SDWebImage
     - SnapKit
@@ -35,6 +35,6 @@ SPEC CHECKSUMS:
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 60ec1cd1bb4f13e68b63ccd3b68f3b2a6b3728bf
+PODFILE CHECKSUM: f2183eda4d4d0f7c827c562f785c7d3a33217fd2
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.0

@@ -74,7 +74,76 @@ extension UIViewLoading where Self : UIView {
 
 
 
-##### block使用
+##### 闭包使用
+
+> 闭包， 下面为闭包的格式
+
+```
+{ (parameters) -> (return type) in
+    statements
+  }
+```
+
+> 尾随闭包
+
+如果需要将一个很长的闭包表达式作为函数最后一个实际参数传递给函数，使用尾随闭包增强函数的可读性。
+
+```
+// 转换如下
+ func someFunctionThatTakesAClosure(closure:() -> Void){
+       //function body goes here
+ }
+ 
+  //here's how you call this function without using a trailing closure
+ 
+  someFunctionThatTakesAClosure({
+       //closure's body goes here
+  })
+    
+  //here's how you call this function with a trailing closure instead
+      
+  someFunctionThatTakesAClosure() {
+       // trailing closure's body goes here
+  }
+```
+
+
+
+> 逃逸闭包
+
+当闭包作为一个实际参数传递给一个函数的时候，我们说这个闭包逃逸了，因为它可以在函数返回后被调用。当你声明一个接受闭包作为形式参数的函数时，你可以在形式参数前写@escaping来明确闭包时允许逃逸的。类似于OC中把block当成属性保存起来以后使用。
+
+```
+var completionHandlers: [() -> Void] = []
+func someFunctionWithEscapingClosure(completionHandler: @escaping () -> Void) {
+    completionHandlers.append(completionHandler)
+}
+```
+
+> 自动闭包
+
+自动闭包是一种自动创建的，用来把座位实际参数传递给函数表达式打包的闭包。它不接受任何实际参数，并且当它被调用时，它会返回内部打包的表达式的值。这个语法的好处在于通过写普通表达式代替显式闭包而使你省略包围函数的形式参数的括号。
+
+```
+
+func serve(customer customerProvider: () -> String) {
+    print("Now serving \(customerProvider())!")
+}
+serve(customer: { customersInLine.remove(at: 0) } )			// 需要使用{}包围闭包体
+
+
+// 对比使用
+func serve(customer customerProvider: @autoclosure () -> String) {
+    print("Now serving \(customerProvider())!")
+}
+serve(customer: customersInLine.remove(at: 0))	// 自动会对实参添加{} 不需要自己添加{}
+```
+
+
+
+
+
+更多闭包知识点：https://www.cnswift.org/closures
 
 
 
@@ -94,6 +163,128 @@ self.headerView.snp.makeConstraints { (make) in
 
 
 ##### 枚举使用
+
+> 格式
+
+```
+enum SomeEnumeration {
+    // enumeration definition goes here
+}
+```
+
+> 关联值: 与枚举成员建立关系的常量或变量
+
+```
+// 条码，分两种，条形码，二维码
+enum Barcode {
+    case upc(Int, Int, Int, Int)
+    case qrCode(String)
+}
+
+// 创建一个条码
+var productBarCode = Barcode.upc(8, 19251, 15225, 2)
+// 创建一个qrcode码
+productBarCode = .qrCode("ABCDEFGHIJKLMNOP")
+
+// 不同的条码需要使用switch语句进行检查
+switch productBarCode {
+case .upc(let a, let b, let c, let d):
+    print("UPC: \(a), \(b), \(c), \(d)")
+case .qrCode(let code):
+    print(code)
+}
+
+// 嫌弃上面写的let太多，可以直接在case后操作
+switch productBarCode {
+case let .upc(a,b,c,d):
+    print("UPC: \(a), \(b), \(c), \(d)")
+case let .qrCode(code):
+    print(code)
+}
+
+```
+
+> 原始值
+
+就是默认值 需要指定枚举成员类型，如果第一个取值为0则其他会逐渐加一，如果为字符串会直接使用字面意思，通过rawValue来使用
+
+```
+enum Planet: Int {  // Int 不可省略
+    case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
+}
+
+enum CompassPoint: String {  // string不可省略
+    case north, south, east, west
+}
+
+print(Planet.venus.rawValue)
+// 2
+
+print(CompassPoint.north.rawValue)
+// north
+
+
+```
+
+
+
+从原始值初始化一个枚举成员
+
+```
+let possiblePlanet = Planet(rawValue: 7)
+```
+
+
+
+> 递归枚举
+
+```
+// 需要使用indirect 关键字
+
+# 写法1
+enum ArithmeticExpression {
+    case number(Int)
+    indirect case addition(ArithmeticExpression, ArithmeticExpression)
+    indirect case multiplication(ArithmeticExpression, ArithmeticExpression)
+}
+
+# 写法2
+indirect enum ArithmeticExpression {
+    case number(Int)
+    case addition(ArithmeticExpression, ArithmeticExpression)
+    case multiplication(ArithmeticExpression, ArithmeticExpression)
+}
+
+
+```
+
+
+
+使用方式：在switch实现逻辑
+
+```
+// 接近自然语言的操作方式
+let five = ArithmeticExpression.number(5)
+let four = ArithmeticExpression.number(4)
+let sum = ArithmeticExpression.addition(five, four)
+let product = ArithmeticExpression.multiplication(sum, ArithmeticExpression.number(2))
+
+// 内部操作的实现
+func evaluate(_ expression: ArithmeticExpression) -> Int {
+    switch expression {
+    case let .number(value):
+        return value
+    case let .addition(left, right):
+        return evaluate(left) + evaluate(right)
+    case let .multiplication(left, right):
+        return evaluate(left) * evaluate(right)
+    }
+}
+
+print(evaluate(product))
+```
+
+
 
 
 
@@ -323,3 +514,40 @@ for score in scores where score>=60 {
 ```
 
 知识点拓展：http://www.hangge.com/blog/cache/detail_1826.html
+
+
+
+
+
+##### 多层字典取值
+
+
+
+##### API可用性
+
+```
+if #available(iOS 10, macOS 10.12, *) {  // 最小检查
+    // Use iOS 10 APIs on iOS, and use macOS 10.12 APIs on macOS
+} else {
+    // Fall back to earlier iOS and macOS APIs
+}
+```
+
+
+
+##### 修改参数值
+
+```
+func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+    let temporaryA = a
+    a = b
+    b = temporaryA
+}
+
+var soneInt = 3
+var anotherInt = 104
+swapTwoInts(&soneInt, &anotherInt)   // 需要传入地址，编译器会自动配置好
+```
+
+
+
