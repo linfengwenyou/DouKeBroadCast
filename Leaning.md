@@ -33,7 +33,7 @@ func RGBCOLOR(r:CGFloat,_ g:CGFloat,_ b:CGFloat) -> UIColor
 
 ```
 
-
+>  OC 怎样使用swift的宏？???
 
 ##### xib接入
 
@@ -56,11 +56,10 @@ protocol UIViewLoading {}
 extension UIView : UIViewLoading {}
 extension UIViewLoading where Self : UIView {
 	
-	static func loadFromNib() -> Self {		// 格式意思需要整理
-		let nib = UINib(nibName: stringOfClass(cls: self), bundle: nil)
-		return nib.instantiate(withOwner: self, options: nil).first as! Self
-	}
-
+static func loadFromNib() -> Self {		// 格式意思需要整理
+	let nib = UINib(nibName: stringOfClass(cls: self), bundle: nil)
+	return nib.instantiate(withOwner: self, options: nil).first as! Self
+}
 ```
 
 
@@ -111,7 +110,11 @@ extension UIViewLoading where Self : UIView {
 
 > 逃逸闭包
 
-当闭包作为一个实际参数传递给一个函数的时候，我们说这个闭包逃逸了，因为它可以在函数返回后被调用。当你声明一个接受闭包作为形式参数的函数时，你可以在形式参数前写@escaping来明确闭包时允许逃逸的。类似于OC中把block当成属性保存起来以后使用。
+当闭包作为一个实际参数传递给一个函数的时候，我们说这个闭包逃逸了，因为它可以在函数返回后被调用。
+
+当你声明一个接受闭包作为形式参数的函数时，你可以在形式参数前写@escaping来明确闭包时允许逃逸的。
+
+类似于OC中把block当成属性保存起来以后使用。
 
 ```
 var completionHandlers: [() -> Void] = []
@@ -315,12 +318,11 @@ indirect enum ArithmeticExpression {
     case multiplication(ArithmeticExpression, ArithmeticExpression)
 }
 
-
 ```
 
 
 
-使用方式：在switch实现逻辑
+使用方式：在switch实现逻辑操作
 
 ```
 // 接近自然语言的操作方式
@@ -623,6 +625,8 @@ class 关键字声明属性，一般用于计算型的类型属性
 
 
 ##### 实例方法中修改值类型 mutating
+
+自身实例方法修改值类型属性
 
 结构体和枚举是值类型的，默认情况下，值类型属性不能被自身实例方法修改。
 
