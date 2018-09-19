@@ -705,3 +705,60 @@ convenience init(parameters) {
 
 > 两段式初始化
 
+* 段一 : 将每一个存储属性引入类，并分配一个初始值
+
+初始化自己的属性，然后上交委托给父类初始化器去初始化父类的属性。一直到顶端。
+
+* 段二：在实例被准备使用前进行定制化存储属性
+
+从最高层初始化后，开始执行子类的定制操作，一层层向子类构建。保证子类可以定制父类存储属性。最后回到调用的初始化器。
+
+
+
+
+
+> 初始化器的自动继承
+
+* 如果你的子类没有定义任何指定初始化器，它会自动继承父类所有的指定初始化器。
+* 如果子类提供了所有父类指定初始化器的实现——要么是通过规则1继承，要么通过在定义中提供
+
+自定义实现的，那么自动继承所有的负累便捷初始化器。
+
+
+
+> 必要初始化器
+
+在类的初始化器前添加required修饰符来表明所有该类的子类都必须实现该初始化器：
+
+```
+class SomeClass {
+
+    required init() {
+
+        // initializer implementation goes here
+
+    }
+}
+
+class SomeSubclass: SomeClass {  // 注意子类继承时，需要标记required 不需要override
+
+    required init() {
+
+        // subclass implementation of the required initializer goes here
+
+    }
+
+}
+```
+
+
+
+##### Any vs AnyObject
+
+* Any 可以表示任何类型，包括函数类型
+* AnyObject 可以表示任何类类型别名
+
+以上为Swift为不确定的类型提供两种特殊的类型别名
+
+
+
