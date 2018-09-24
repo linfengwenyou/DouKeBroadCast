@@ -8,19 +8,15 @@
 
 import Foundation
 
-protocol UIViewLoading where Self : UIView {
-    static func loadFromNib() -> Self
+protocol UIViewLoading {
 }
+
 extension UIView : UIViewLoading {
-    
+
 }
-extension UIViewLoading {
-
+extension UIViewLoading where Self : UIView {
 	static func loadFromNib() -> Self {
-        return Bundle.main.loadNibNamed(stringOfClass(self), owner: nil, options: nil)?.first as! Self
-//        let nib = UINib(nibName: stringOfClass(self), bundle: nil)
-//        return nib.instantiate(withOwner: self, options: nil).first as! Self
+		return Bundle.main.loadNibNamed(stringOfClass(self), owner: nil, options: nil)?.first as! Self
 	}
-
 }
 
